@@ -1,0 +1,218 @@
+@import components/mixins
+
+html
+    font-size: 0.9px
+    +media(2560)
+        font-size: 2px
+
+body
+    font-family: "Oswald"
+    +media(1295)
+        background: #000 url(../img/bg.png)
+
+.vignette
+    position: fixed
+    width: 100%
+    height: 100%
+    background: url(../img/frame.png)
+    background-size: 1900rem
+    background-position: center
+    opacity: .8
+    pointer-events: none
+    z-index: 100
+
+.frame1,
+.frame3
+    display: none
+    position: fixed
+    width: 100%
+    height: 40rem
+    background: #000
+    z-index: 99
+    +media(1470)
+        display: block
+
+.frame2,
+.frame4
+    display: none
+    position: fixed
+    height: 100%
+    width: 40rem
+    background: #000
+    z-index: 99
+    +media(1470)
+        display: block
+.frame3
+    bottom: 0
+.frame4
+    right: 0
+
+.wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    top: 50%
+    left: 50%
+    row-gap: 10rem
+    max-width: 1300rem
+    margin: 0 auto
+    padding: 20rem
+    background: #000
+    text-align: center
+    +media(1295)
+        padding: 30rem 60rem
+        background: url(../img/bgwrap.png) no-repeat
+        background-size: 1310rem 693rem
+        transform: translate(50rem,6%)
+    +media(691)
+        align-items: start
+        text-align: left
+    +media(2560)
+        max-width: 90%
+        background-size: 1128rem 693rem
+        transform: translate(23rem, 6%)
+h1,
+h2,
+h3
+    color: #c8c8c8
+
+p,
+span
+    color: #eaeaea
+
+.vertical
+    display: none
+    width: 1.4%
+    background: url(../img/hr.jpg)
+    background-position: 120rem
+    background-size: 430rem
+    border-radius: 50rem
+    +media(691)
+        display: flex
+
+.horizontal
+    border-radius: 50rem
+    height: 30rem
+    background-color: #c5c5c5
+
+header
+    width: 82%
+    .logo
+        display: flex
+        flex-direction: column
+        align-items: center
+        column-gap: 30rem
+        +media(591)
+            flex-direction: row
+        img
+            width: 99%
+            +media(691)
+                width: 35%
+            +media(425)
+                width: 70%
+            +media(370)
+                width: auto
+            +media(2560)
+                width: 65%
+
+        h1
+            font-size: 40rem
+            font-family: "Oswald"
+main
+    .sides
+        display: flex
+        flex-direction: column
+        align-items: center
+        column-gap: 15rem
+        +media(691)
+            flex-direction: row
+            align-items: start
+        .leftside
+            display: flex
+            flex-direction: column
+            margin-top: 25rem
+            max-width: 680rem
+            p
+                font-size: 20rem
+            .description
+                display: flex
+                flex-direction: column
+                row-gap: 10rem
+        .rightside
+            a
+                font-size: 24rem
+            h2
+                font-size: 64rem
+            h3
+                font-size: 30rem
+            .content
+                margin-left: 10rem
+                a
+                    color: #c8c8c8
+                    text-decoration: none
+                    &:hover
+                        color: #9d6829
+                        text-decoration: underline
+                        text-underline-offset: 7rem
+                .contacts
+                    display: flex
+                    flex-direction: column
+
+                    .phone,
+                    .telegram,
+                    .email,
+                    .adress
+                        position: relative
+                        padding-left: 40rem
+                        top: 0
+                        right: 0
+                        width: 220rem
+                        +media(691)
+                            width: auto
+
+                    .phone:before,
+                    .telegram:before,
+                    .email:before,
+                    .adress:before
+                        content: ""
+                        position: absolute
+                        width: 22rem
+                        height: 25rem
+                        top: 50%
+                        left: 0
+                        transform: translate(50%, -50%)
+                        left: -3rem
+                        transition: all .5s ease
+                    .phone:before
+                        background: url(../img/phone.svg) no-repeat
+                        background-size: 20rem
+                    .telegram:before
+                        background: url(../img/telegram.svg) no-repeat
+                        background-size: 20rem
+                    .email:before
+                        height: 15rem
+                        background: url(../img/gmail.svg) no-repeat
+                        background-size: 20rem
+                    .adress:before
+                        width: 30rem
+                        height: 28rem
+                        background: url(../img/logo.png) no-repeat
+                        background-size: 30rem
+                        left: -13rem
+
+            .bottomside
+                display: flex
+                flex-direction: column
+                row-gap: 15rem
+
+footer
+    display: flex
+    justify-content: center
+    width: 80%
+    margin-left: 4.3%
+    border-radius: 33rem
+    background-color: #000000
+    border: 8rem solid #808080
+    p
+        font-size: 30rem
+        color: #ffffff
