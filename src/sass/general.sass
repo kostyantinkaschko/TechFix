@@ -7,8 +7,7 @@ html
 
 body
     font-family: "Oswald"
-    +media(1295)
-        background: #000 url(../img/bg.png)
+    background: #000 url(../img/bg.png)
 
 .vignette
     position: fixed
@@ -57,16 +56,19 @@ body
     max-width: 1300rem
     margin: 0 auto
     padding: 20rem
-    background: #000
+    background: #000000b8
     text-align: center
     +media(1295)
         padding: 30rem 60rem
         background: url(../img/bgwrap.png) no-repeat
         background-size: 1310rem 693rem
-        transform: translate(50rem,6%)
+        transform: translate(0,6%)
+        border-radius: 0
     +media(691)
         align-items: start
         text-align: left
+    +media(420)
+        border-radius: 50rem
     +media(2560)
         max-width: 90%
         background-size: 1128rem 693rem
@@ -83,12 +85,14 @@ span
 .vertical
     display: none
     width: 1.4%
+    height: 330rem
     background: url(../img/hr.jpg)
     background-position: 120rem
     background-size: 430rem
     border-radius: 50rem
+
     +media(691)
-        display: flex
+        display: block
 
 .horizontal
     border-radius: 50rem
@@ -102,7 +106,7 @@ header
         flex-direction: column
         align-items: center
         column-gap: 30rem
-        +media(591)
+        +media(691)
             flex-direction: row
         img
             width: 99%
@@ -157,7 +161,7 @@ main
                 .contacts
                     display: flex
                     flex-direction: column
-
+                    text-align: left
                     .phone,
                     .telegram,
                     .email,
