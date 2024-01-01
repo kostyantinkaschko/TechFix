@@ -1,3 +1,5 @@
+include components/mixins.pug
+
 doctype html
 html(lang="uk")
   head
@@ -34,11 +36,7 @@ html(lang="uk")
     meta(property="og:type" content="business.business")
     title TechFix ремонт, оновлення та збірка для вашого комп'ютера
   body 
-    .vignette
-    .frame1
-    .frame3
-    .frame2
-    .frame4
+    +topline(topline)
     .wrapper(itemscope itemtype="https://schema.org/Organization")
       header(itemscope itemtype="https://schema.org/WPHeader") 
         .logo(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
@@ -57,6 +55,9 @@ html(lang="uk")
                 | Наші фахівці мають багаторічний досвід у ремонті 
                 | комп'ютерів. Techfix розуміє, як вам важливо повернути вам ваш пк
                 | тому наш сервіс працюємо з максимальною ефективністю.
+              p(itemprop="description") 
+                | Також задопомогою нашого сайту ви можете дізнатись що відбувається з вашим пристроєм. 
+                a(href="php/") Сюди можна натиснути! 
           hr.vertical
           aside.rightside 
             .topside 
