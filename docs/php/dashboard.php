@@ -90,12 +90,12 @@ try {
     <div class="frame4"></div>
     <div class="wrapper">
         <header itemscope="itemscope" itemtype="https://schema.org/WPHeader">
-            <div class="logo" itemprop="logo" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
-                <img src="../img/techfix.png" alt="Сервісний центр TechFix" />
+            <a class="logo" href="../index.html" itemprop="logo" itemscope="itemscope">
+                <img itemtype="https://schema.org/ImageObject" src="../img/techfix.png" alt="Сервісний центр TechFix" />
                 <h1 itemprop="headline">Замовлення номер
                     <?php echo $userID; ?>
                 </h1>
-            </div>
+            </a>
         </header>
         <main>
             <div class="sides">

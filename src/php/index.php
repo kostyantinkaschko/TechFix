@@ -93,10 +93,10 @@ try {
     <div class="second-page-wrapper">
         <div class="wrapper">
             <header itemscope="itemscope" itemtype="https://schema.org/WPHeader">
-                <div class="logo" itemprop="logo" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
-                    <img src="../img/techfix.png" alt="Сервісний центр TechFix" />
+                <a class="logo" href="../index.html" itemprop="logo" itemscope="itemscope">
+                    <img itemtype="https://schema.org/ImageObject" src="../img/techfix.png" alt="Сервісний центр TechFix" />
                     <h1 itemprop="headline">Що з моїм пк?</h1>
-                </div>
+                </a>
             </header>
             <main>
                 <div class="sides second-page">
