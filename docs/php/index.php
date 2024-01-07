@@ -120,7 +120,7 @@ try {
                         <h2>Форма:</h2>
                         <form action="#" method="post" class="login-form">
                             <div>
-                                <p>ID:</p>
+                                <p>Номер замовлення:</p>
                                 <input type="number" name="id" placeholder="Ваш ID">
                             </div>
                             <hr class="underinput">
