@@ -94,7 +94,7 @@ try {
         <div class="wrapper">
             <header itemscope="itemscope" itemtype="https://schema.org/WPHeader">
                 <a class="logo" href="../index.html" itemprop="logo" itemscope="itemscope">
-                    <img itemtype="https://schema.org/ImageObject" src="../img/techfix.png" alt="Сервісний центр TechFix" />
+                    <img itemtype="https://schema.org/ImageObject" src="../img/techfix.png" alt="Сервісний центр TechFix"  title="Сервісний центр TechFix">
                     <h1 itemprop="headline">Що з моїм пк?</h1>
                 </a>
             </header>
